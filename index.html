@@ -14,6 +14,13 @@
     .markdown-section {
         max-width: 95%;
     }
+    :root {
+    /* Reduce the font size */
+    --base-font-size: 14px;
+
+    /* Change the sidebar bullets */
+    --sidebar-nav-link-before-content: '>';
+  }
   </style>
   <div id="app">Loading ...</div>
   <script>
@@ -69,6 +76,7 @@
       }
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
   <script src="//pyecharts.org/static/docsify-copy-code.min.js"></script>
   <script src="//pyecharts.org/static/search.js"></script>
   <script src="//pyecharts.org/static/docsify.min.js"></script>
