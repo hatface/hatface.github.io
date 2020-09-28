@@ -1,4 +1,4 @@
-## jupyter的安装与运行
+##  jupyter的安装与运行
 ```bash
 # 安装jupyter
 
@@ -11,7 +11,7 @@ jupyter contrib nbextension install --user --skip-running-check
 jupyter notebook
 ```
 
-##pandas基本使用
+## pandas基本使用
 
 
 ```python
@@ -30,7 +30,7 @@ print(df.head())
     lg  8500   91   good
     
 
-##pandas值的操作
+## pandas值的操作
 
 
 
@@ -66,7 +66,7 @@ print(df.head())
       df['bz'][0] += 'caibi';
     
 
-##pandas导入导出文件
+## pandas导入导出文件
 
 
 
@@ -272,7 +272,7 @@ for col in df:
     bz	pass	good	excel	good	
     
 
-##索引
+## 索引
 
 
 ```python
