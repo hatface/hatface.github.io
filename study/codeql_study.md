@@ -12,6 +12,7 @@ https://github.com/github/codeql-cli-binaries
 添加codeql到path环境变量下
 
 3、设置vscode插件
+
 3.1、设置codeql-cli的路径
 
 

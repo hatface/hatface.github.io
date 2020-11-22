@@ -1,3 +1,5 @@
 - [study - pandas_study](study/pandas_study.md 'include :type=code')
 - [study - guice_study](study/guice_study.md 'include :type=code')
 - [study - codeql_study](study/codeql_study.md 'include :type=code')
+- [study - java_study](study/java_study.md 'include :type=code')
+- [study - tomcat_study](study/tomcat_study.md 'include :type=code')
