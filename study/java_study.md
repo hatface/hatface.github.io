@@ -16,3 +16,17 @@
 InputStream path = this.getClass().getResourceAsStream("/data.txt");
 BufferedReader reader = new BufferedReader(new InputStreamReader(path));
 ```
+
+## ThreadLocal
+使用ThreadLocal可以获得一个只在特定线程才有的变量
+
+### 原理
+由于每一个Thread对象有一个ThreadMap成员变量，ThreadLocal使用Thread.currentThread();获得当前的Thread对象，并获得Thread对象的
+ThreadMap对象，所以可以起到使用ThreadLocal可以获得一个只有在特定线程才有的变量。
+
+
+## NIO
+参考
+```bash
+https://ifeve.com/overview/
+```

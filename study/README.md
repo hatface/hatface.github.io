@@ -3,3 +3,5 @@
 - [study - codeql_study](study/codeql_study.md 'include :type=code')
 - [study - java_study](study/java_study.md 'include :type=code')
 - [study - tomcat_study](study/tomcat_study.md 'include :type=code')
+- [study - javassist_study](study/javassist_study.md 'include :type=code')
+- [study - win_study](study/win_study.md 'include :type=code')
