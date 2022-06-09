@@ -11,6 +11,6 @@
         - [javassist 学习](study/javassist_study.md ':type=code')
         - [windows 学习](study/win_study.md ':type=code')
         - [rop 学习](study/rop_study.md ':type=code')
-        - [rop 学习](study/vue_study.md ':type=code')
+        - [vue 学习](study/vue_study.md ':type=code')
     - [**漏洞**](vuln/README.md)
         - [shiro 分析笔记](vuln/shiro.md ':type=code')
