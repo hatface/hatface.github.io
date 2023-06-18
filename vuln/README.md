@@ -1,1 +1,1 @@
-- [vuln - shiro](vuln/shiro.md 'include :type=code')
+- [websec - shiro](vuln/shiro.md 'include :type=code')

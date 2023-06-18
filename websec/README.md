@@ -1,0 +1,2 @@
+- [websec - XSS](websec/xss.md 'include :type=code')
+- [websec - csrf](websec/csrf.md 'include :type=code')

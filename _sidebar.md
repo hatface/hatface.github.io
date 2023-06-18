@@ -14,3 +14,6 @@
         - [vue 学习](study/vue_study.md ':type=code')
     - [**漏洞**](vuln/README.md)
         - [shiro 分析笔记](vuln/shiro.md ':type=code')
+    - [**常见Web漏洞**](websec/README.md)
+        - [XSS](websec/xss.md ':type=code')
+        - [客户端请求伪造 CORS+CSRF+JSONP](websec/csrf.md ':type=code')
