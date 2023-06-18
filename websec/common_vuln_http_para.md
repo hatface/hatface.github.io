@@ -1,0 +1,10 @@
+|序号|漏洞|参数名称|说明|
+|----|----|----|----|
+|1|JSONP劫持|cb|-|
+|2|JSONP劫持|jsoncb|-|
+|3|JSONP劫持|call|-|
+|4|JSONP劫持|jsoncall|-|
+|5|JSONP劫持|cback|-|
+|6|JSONP劫持|callback|-|
+|7|JSONP劫持|jsonp|-|
+|7|JSONP劫持|jsonpCallback|-|
