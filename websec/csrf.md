@@ -131,4 +131,4 @@ function ip(data) {
 2、获取抓取资源的请求包，变异refferer为非当前域的域名，检测是否收到同样响应
 3、1和2同时满足则存在JSONP跨域漏洞
 ```
-常见参数如所示[常见疑似漏洞的HTTP参数](common_vuln_http_para.md)
+常见参数如所示[常见疑似漏洞的HTTP参数](websec/common_vuln_http_para.md)
