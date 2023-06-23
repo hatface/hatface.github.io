@@ -1,2 +1,3 @@
 - [websec - XSS](websec/xss.md 'include :type=code')
 - [websec - csrf](websec/csrf.md 'include :type=code')
+- [websec - SQLi](websec/SQLi.md 'include :type=code')

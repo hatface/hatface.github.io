@@ -17,3 +17,4 @@
     - [**常见Web漏洞**](websec/README.md)
         - [XSS](websec/xss.md ':type=code')
         - [客户端请求伪造 CORS+CSRF+JSONP](websec/csrf.md ':type=code')
+        - [SQL注入](websec/SQLi.md ':type=code')
