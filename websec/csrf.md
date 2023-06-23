@@ -132,3 +132,45 @@ function ip(data) {
 3、1和2同时满足则存在JSONP跨域漏洞
 ```
 常见参数如所示[常见疑似漏洞的HTTP参数](websec/common_vuln_http_para.md)
+
+## 4. CORS漏洞
+CORS同样用于解决跨域需求，只不过是现代浏览器内置的一直跨域机制，关于cors的介绍可以见[CORS的介绍](https://javascript.ruanyifeng.com/bom/cors.html)
+
+### 4.1 漏洞成因
+1、服务端对于数据抓取的来源配置不正确
+1.1、Access-Control-Allow-Origin的配置为*，代表所有网站都可以抓取本网站的信息
+1.2、Access-Control-Allow-Origin的配置存在逻辑错误，例如正则可绕过，比如配置```.*domain.com```,本意只允许domain.com下的子域，实际上却允许了```evildomain.com```
+
+### 4.2 攻击方式
+同3.2 
+
+### 4.3 防御方式
+1、使用白名单方式正确配置Access-Control-Allow-Origin
+
+### 4.4 自动化检测方式
+1、发送一个非简单ajax请求
+2、检测返回的Access-Control-Allow-Origin是否为*
+3、如果Access-Control-Allow-Origin不为*，修改请求包的中origin，增加前缀，查看是否和不增加返回的内容一致
+
+## 5. CSRF漏洞
+CSRF漏洞之所以在这里提到，是因为csrf漏洞的利用方式和JSONP与CORS漏洞利用方式一致
+
+### 5.1 漏洞成因
+服务端未校验reffer，导致从其他站可以代替客户端发出请求
+服务端无token校验机制，导致从其他站代替客户发起请求无校验
+
+### 5.2 攻击方式
+同3.2 
+
+### 5.3 防御方式
+1、增加reffer校验机制
+2、增加token校验机制
+2.1、最好在httpheader中增加token校验
+
+### 5.4 自动化检测方式
+1、抓取原包，及原包的响应
+2、修改原包，增加refferer，使用存在随机方式的refferer站点，比如aabbcc.domain.com
+3、判断步骤1的响应和步骤2的响应是否一致，一致则存在CSRF漏洞
+
+## REF：
+[JSONP与CORS漏洞挖掘](https://www.anquanke.com/post/id/97671)
